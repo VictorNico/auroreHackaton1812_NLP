@@ -1,0 +1,111 @@
+# Python Environment
+nlp_env/
+venv/
+env/
+.env
+.venv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Machine Learning Specific
+*.h5
+*.pkl
+*.joblib
+*.model
+*.pt
+*.pth
+
+# Datasets (large files)
+*.csv
+*.json
+*.xlsx
+*.zip
+!sample_data.csv  # Exception for sample data
+
+# Logs
+*.log
+logs/
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# TensorFlow & Keras
+*.tfrecord
+events.out.tfevents.*
+
+# Model Weights & Checkpoints
+checkpoints/
+*.ckpt
+*.pb
+
+# Temporary Files
+*.tmp
+*.bak
+*~
+
+# CUDA & GPU Related
+*.cu
+*.cuda
+
+# Virtual Environment Markers
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Security
+secrets.json
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Specific to NLP Projects
+*.vocab
+*.bpe
+*.sentencepiece
+
+# Backup Files
+*.bak
+*.gzip
+*.tar.gz
+
+# Large Language Model Specific
+*.vocab
+*.model
+*.index
+*.data-*
+
+# Profiling
+*.prof
+*.lprof
+
+# Development Notes
+TODO.md
+NOTES.md
+
+# Configuration
+config.ini
+config.yaml
