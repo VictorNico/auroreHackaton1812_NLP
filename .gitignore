@@ -109,3 +109,7 @@ NOTES.md
 # Configuration
 config.ini
 config.yaml
+
+
+# Exclude data folders
+data/**/

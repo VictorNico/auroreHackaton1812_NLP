@@ -105,8 +105,13 @@ project_root/
 │
 ├── requirements.txt      # Dépendances
 ├── README.md             # Ce fichier
-└── .gitignore            # Configuration git
+├── .gitignore            # Configuration git
+├── main.py
+├── setup_nlp_env.sh       # Pour Linux/Mac
+├── setup_nlp_env.bat      # Pour Windows
+└── Dockerfile
 ```
+
 
 ## Licence
 Distribué sous licence Apache 2.
@@ -133,7 +138,7 @@ Victor DJIEMBOU - viclegranddab@gmail.com
 
     - Les messages de validation doivent suivre le format for mat `#<numéro_d'édition> | <nom_de_l'auteur> | <description_du_travail>`
 
-    - @exemple est `|#1 | @VictorNico | installer la structure du projet|`
+    - @exemple est `|#1 | @VictorNico | installer la sztructure du projet|`
 
     - La numérotation se fait par rapport au numéro de la question sur laquelle vous travaillez.
 
