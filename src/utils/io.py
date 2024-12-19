@@ -12,7 +12,7 @@ Ce module inclut des fonctionnalités pour manipulation I/O audio tels que :
 - Enregistrer un fichier audio.
 
 Exemple d'utilisation 1 :
-    from soundFileDecelerate import load_audio, decelerate_audio
+    from src.preprocessing.speed import load_audio, decelerate_audio
     audio = load_audio("file.wav")
     slow_audio = decelerate_audio(audio, slow_factor=0.5)
     slow_audio.export("slowed_file.wav", format="wav")
