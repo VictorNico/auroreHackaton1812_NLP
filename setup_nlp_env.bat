@@ -24,7 +24,8 @@ REM Mise à jour de pip
 python -m pip install --upgrade pip setuptools wheel
 
 REM Installation des dépendances
-pip install -r requirements.txt
+cp requirements.sh requirements.bat
+cat requirements.bat
 
 echo Environnement NLP configuré avec succès!
 echo Pour activer : nlp_env\Scripts\activate

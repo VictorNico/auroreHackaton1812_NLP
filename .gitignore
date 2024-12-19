@@ -13,6 +13,8 @@ __pycache__/
 # Distribution / packaging
 dist/
 build/
+**/reports
+**/*reports.yml
 *.egg-info/
 
 # Jupyter Notebook

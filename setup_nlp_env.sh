@@ -50,7 +50,8 @@ setup_virtual_env() {
     pip install --upgrade pip setuptools wheel
 
     # Installation des dépendances
-    pip install -r requirements.txt
+    chmod +x requirements.sh
+    ./requirements.sh
 
     echo -e "${GREEN}Environnement NLP configuré avec succès!${NC}"
 }
