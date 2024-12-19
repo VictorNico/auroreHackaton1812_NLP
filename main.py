@@ -18,39 +18,37 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# def load_modules(module_list):
-#     """
-#     Charge les modules à partir d'une liste en affichant une barre de progression
-#     """
-#     logger.info("Début du chargement des modules")
-#     for module in tqdm(module_list, desc="Chargement des modules", unit="module"):
-#         try:
-#             importlib.import_module(module)  # Import dynamique
-#             logger.info(f"Module {module} chargé avec succès.")
-#         except ImportError as e:
-#             logger.error(f"Erreur lors du chargement du module {module}: {e}")
+# Dictionnaire pour stocker les modules importés
+imported_modules = {}
 
 def load_modules(module_list):
     """
     Charge les modules à partir d'une liste en affichant une barre de progression
     """
+    global imported_modules
     logger.info("Début du chargement des modules")
     # Charger les bibliothèques en utilisant importlib
     with tqdm(module_list, total=len(module_list), desc="Chargement des modules",unit="module") as pbar:
         for module_name in module_list:
             try:
-                # module = importlib.import_module(library_name)
-                exec(f'from {module_name} import *')
+                # exec(f'from {module_name} import * as {module_name.split(".")[-1]}')
+                # Importer dynamiquement le module
+                module = importlib.import_module(module_name)
+                # Stocker le module dans un dictionnaire global
+                imported_modules[module_name] = module
 
-            except ImportError:
+            except ImportError as e:
                 # En cas d'erreur lors du chargement de la bibliothèque
                 pbar.set_description(f"Erreur lors du chargement du module {module_name}: {e}")
+                logger.error(f"Erreur lors du chargement du module {module_name}: {e}")
             else:
                 # Succès lors du chargement de la bibliothèque
                 pbar.set_description(f"Module {module_name} chargé avec succès.")
+                logger.error(f"Module {module_name} chargé avec succès.")
             finally:
                 pbar.set_description(f"Module terminé avec succès.")
                 pbar.update(1)
+                logger.info("Fin du chargement des modules")
 
 def load_configuration():
     """
@@ -82,7 +80,15 @@ def main(args):
         # Chargement des modules avec tqdm pour afficher la progression
         load_modules(modules_to_load)
 
-        help_soundFileDecelerate()
+        # Appeler une fonction du module chargé
+        if 'src.preprocessing.speed' in imported_modules:
+            module_speed = imported_modules['src.preprocessing.speed']
+            print(imported_modules.keys())
+            print(module_speed)
+            if hasattr(module_speed, 'help_soundFileDecelerate'):
+                module_speed.help_soundFileDecelerate()
+            else:
+                logger.error("La fonction 'help_soundFileDecelerate' n'existe pas dans le module.")
 
         # Votre logique principale ici
         if args.mode == 'train':

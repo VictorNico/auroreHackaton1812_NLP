@@ -59,4 +59,4 @@ def decelerate_audio_v2(audio, slow_factor=0.5):
     return slower_audio
 
 def help_soundFileDecelerate():
-    logging.INFO("Usage: python soundFileDecelerate.py <audio_path> <slow_factor>")
+    logging.info("Usage: python soundFileDecelerate.py <audio_path> <slow_factor>")
