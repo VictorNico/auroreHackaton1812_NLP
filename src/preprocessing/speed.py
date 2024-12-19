@@ -18,6 +18,8 @@ Exemple d'utilisation 1 :
     slow_audio = decelerate_audio(audio, slow_factor=0.5)
     slow_audio.export("slowed_file.wav", format="wav")
 
+
+
 """
 
 __author__ = "Victor Nico"
