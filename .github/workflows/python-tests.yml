@@ -26,6 +26,7 @@ jobs:
 
     - name: Run tests
       run: |
+        source nlp_env/bin/activate
         mkdir -p tests/reports
         pytest tests --junit-xml=tests/reports/results.xml --cov=src --cov-report=xml:tests/reports/coverage.xml
 

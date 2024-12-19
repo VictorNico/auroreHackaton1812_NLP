@@ -41,23 +41,17 @@ setup_virtual_env() {
     echo "Configuration de l'environnement virtuel..."
 
     # Créer l'environnement virtuel
-    python3.9 -m venv nlp_env1
+    python3.9 -m venv nlp_env
 
     # Activer l'environnement
-    source nlp_env1/bin/activate
+    source nlp_env/bin/activate
 
     # Mise à jour de pip
     pip install --upgrade pip setuptools wheel
 
     # Installation des dépendances
-    pip install numpy scipy pandas tensorflow keras scikit-learn
-    pip install torch==1.10.0 torchvision==0.11.0
-    pip install transformers spacy nltk gensim fasttext
-    pip install matplotlib seaborn tqdm jupyter ipython
-    pip install flair==0.12.2 allennlp==2.10.0
-    pip install sphinx
-    pip install pytest pytest-cov
-    pip install librosa soundfile pydub
+    chmod +x requirements.sh
+    ./requirements.sh
 
     echo -e "${GREEN}Environnement NLP configuré avec succès!${NC}"
 }
