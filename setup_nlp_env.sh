@@ -41,10 +41,10 @@ setup_virtual_env() {
     echo "Configuration de l'environnement virtuel..."
 
     # Créer l'environnement virtuel
-    python3.9 -m venv nlp_env
+    python3.9 -m venv nlp_env1
 
     # Activer l'environnement
-    source nlp_env/bin/activate
+    source nlp_env1/bin/activate
 
     # Mise à jour de pip
     pip install --upgrade pip setuptools wheel
