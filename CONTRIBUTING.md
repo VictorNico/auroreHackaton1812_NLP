@@ -17,8 +17,10 @@ Si vous souhaitez proposer une nouvelle fonctionnalité, ouvrez une "issue" pour
 4. Copiez la commande fournie
 5. Collez locallement pour créer la branche aussocié à l'issue
 6. Faites vos modifications et ajoutez-les à votre commit avec : `git commit -am '#<numéro_d'édition> | <nom_de_l'auteur> | <description_du_travail>'`.
-7. Poussez vos modifications : `git push`.
-8. Créez une pull request dans la branche principale du dépôt.
+7. Accepter l'etat actuel du main : `git merge origin/main`
+8. Si conflits, corriger, committer.
+8. Poussez vos modifications : `git push`.
+9. Créez une pull request dans la branche principale du dépôt.
 
 ### Code de conduite
 Nous attendons de tous les contributeurs qu'ils se comportent de manière respectueuse et professionnelle. Toute forme de harcèlement ou d'intolérance ne sera pas tolérée.
