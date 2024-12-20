@@ -11,7 +11,7 @@ import soundfile as sf
 
 # Chemins de fichiers pour les tests
 TEST_FILE = "tests/test_audio.wav"
-SOURCE_S = "/Users/djiemboutienctheuvictornico/Documents/MyFolders/DevProjects/Contributions/auroreHackaton1812_NLP/data/Yemba_Dataset/audios/speaker_1/group_1/spkr_1_group_1_statement_1.wav"
+SOURCE_S = "data/Yemba_Dataset/audios/speaker_1/group_1/spkr_1_group_1_statement_1.wav"
 OUTPUT_FILE = "tests/output_audio.wav"
 OUTPUT_FILE_1 = "tests/output_audio_1.wav"
 

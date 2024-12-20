@@ -2,7 +2,7 @@ import pytest
 import os
 import numpy as np
 from src.preprocessing.speed import decelerate_audio, decelerate_audio_v2
-from src.utils.io import load_audio, load_audio_v2, save_audio, save_audio_v2
+from src.utils.io import load_audio, load_audio_v2
 from pydub import AudioSegment
 import librosa
 import soundfile as sf
