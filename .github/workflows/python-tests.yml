@@ -24,6 +24,10 @@ jobs:
     - name: Install dependencies using script
       run: ./setup_nlp_env.sh
 
+    - name: Set PYTHONPATH
+      run: echo "PYTHONPATH=$(pwd)/src" >> $GITHUB_ENV  # Set PYTHONPATH to include src
+
+
     - name: Run tests
       run: |
         source nlp_env/bin/activate
