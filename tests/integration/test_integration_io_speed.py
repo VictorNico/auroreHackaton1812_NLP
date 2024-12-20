@@ -26,7 +26,7 @@ def sample_audio():
     y = 0.5 * np.sin(2 * np.pi * 440 * t)  # Signal sinusoïdal
     sf.write(TEST_FILE, y, sr)
     yield TEST_FILE
-    # os.remove(TEST_FILE)
+    os.remove(TEST_FILE)
 
 
 def test_integration_decelerate_audio(sample_audio):
@@ -45,7 +45,7 @@ def test_integration_decelerate_audio(sample_audio):
     slow_y, slow_sr = load_audio(OUTPUT_FILE)
     assert len(slow_y) > len(y), "L'audio ne doit pas être plus court après ralentissement"
 
-    # os.remove(OUTPUT_FILE)
+    os.remove(OUTPUT_FILE)
 
 
 def test_integration_decelerate_audio_v2(sample_audio):
@@ -64,4 +64,4 @@ def test_integration_decelerate_audio_v2(sample_audio):
     slow_audio = AudioSegment.from_wav(OUTPUT_FILE_1)
     assert math.ceil(slow_audio.duration_seconds) == math.ceil(audio.duration_seconds)*2, "L'audio ne doit pas être plus court après ralentissement"
 
-    # os.remove(OUTPUT_FILE)
+    os.remove(OUTPUT_FILE_1)
