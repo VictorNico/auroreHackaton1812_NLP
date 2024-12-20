@@ -27,7 +27,7 @@ build/
 *.model
 *.pt
 *.pth
-
+**/*.wav
 # Datasets (large files)
 *.csv
 *.json
