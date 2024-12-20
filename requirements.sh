@@ -6,3 +6,4 @@ pip install flair==0.12.2 allennlp==2.10.0
 pip install sphinx
 pip install pytest pytest-cov
 pip install librosa soundfile pydub
+pip install librosa soundfile numpy
