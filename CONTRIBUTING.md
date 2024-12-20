@@ -1,4 +1,4 @@
-# Contributing to [Nom du projet]
+# Contributing to L'Aurore de la Recherche en Informatique
 
 Nous sommes ravis que vous souhaitiez contribuer à notre projet ! Avant de commencer, veuillez lire ces lignes directrices pour que le processus se passe bien.
 
