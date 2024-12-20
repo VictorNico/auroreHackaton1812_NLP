@@ -19,8 +19,8 @@ Si vous souhaitez proposer une nouvelle fonctionnalité, ouvrez une "issue" pour
 6. Faites vos modifications et ajoutez-les à votre commit avec : `git commit -am '#<numéro_d'édition> | <nom_de_l'auteur> | <description_du_travail>'`.
 7. Accepter l'etat actuel du main : `git merge origin/main`
 8. Si conflits, corriger, committer.
-8. Poussez vos modifications : `git push`.
-9. Créez une pull request dans la branche principale du dépôt.
+9. Poussez vos modifications : `git push`.
+10. Créez une pull request dans la branche principale du dépôt.
 
 ### Code de conduite
 Nous attendons de tous les contributeurs qu'ils se comportent de manière respectueuse et professionnelle. Toute forme de harcèlement ou d'intolérance ne sera pas tolérée.
