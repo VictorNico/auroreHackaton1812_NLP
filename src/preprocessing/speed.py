@@ -44,7 +44,7 @@ def decelerate_audio(y, slow_factor=1.5):
         y_slow: L'objet audio ralenti.
     """
     # Réduire la vitesse (facteur > 1 diminue la vitesse, ex: 1.5 réduit de 50%)
-    y_slow = librosa.effects.time_stretch(y, rate=1 / slow_factor)
+    y_slow = librosa.effects.time_stretch(y, rate=slow_factor)
 
     # Retourner l'audio ralenti
     return y_slow

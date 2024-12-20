@@ -3,7 +3,42 @@
 ## Description
 Reconnaissance Vocal de la langue Yemba
 
-**table of content**
+## Membres du Projet
+<table>
+  <thead>
+    <tr>
+      <th>Profil</th>
+      <th>Nom</th>
+      <th>Rôle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://avatars.githubusercontent.com/u/50924368?v=4" alt="DJIEMBOU TIENTCHEU Victor Nico" width="50" height="50" style="border-radius: 50%;"></td>
+      <td><a href="https://github.com/VictorNico">DJIEMBOU TIENTCHEU Victor Nico</a></td>
+      <td>Chef d'équipe et maintaineur, Étudiant chercheur en Science des données, M2, UY1</td>
+    </tr>
+    <tr>
+      <td><img src="https://avatars.githubusercontent.com/u/50924368?v=4" alt="FOTSING ENGOULOU Simon Gaetan" width="50" height="50" style="border-radius: 50%;"></td>
+      <td><a href="https://github.com/FESG3002">FOTSING ENGOULOU Simon Gaetan</a></td>
+      <td>Collaborateur, Étudiant chercheur en Science des données, M1, UY1</td>
+    </tr>
+    <tr>
+      <td><img src="https://avatars.githubusercontent.com/u/50924368?v=4" alt="LONTSI LAMBOU Ronaldino" width="50" height="50" style="border-radius: 50%;"></td>
+      <td><a href="https://github.com/LLontsi">LONTSI LAMBOU Ronaldino</a></td>
+      <td>Collaborateur, Étudiant chercheur en Science des données, M1, UY1</td>
+    </tr>
+    <tr>
+      <td><img src="https://avatars.githubusercontent.com/u/50924368?v=4" alt="NOUBISSI FOPA Christian Junior" width="50" height="50" style="border-radius: 50%;"></td>
+      <td><a href="https://github.com/NFChristianJ">NOUBISSI FOPA Christian Junior</a></td>
+      <td>Collaborateur, Étudiant chercheur en Science des données, M1, UY1</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+## **table of content**
 
 - [Prérequis](#Prérequis)
 - [Clonage](#Clonage)
@@ -37,16 +72,6 @@ Reconnaissance Vocal de la langue Yemba
     cd aurore
   ```
 
-## Usage
-- Dependencies installation Linux/Mac
-
-```bash
-chmod +x setup_nlp_env.sh
-./setup_nlp_env.sh
-```
-
-- Windows
-Executer ``setup_nlp_env.bat``
 
 - requirements checking
 ```zsh
@@ -64,9 +89,15 @@ nlp_env\Scripts\activate  # Windows
 ```
 
 ### Installation des dépendances
+- Dependencies installation Linux/Mac
+
 ```bash
-pip install -r requirements.txt
+chmod +x setup_nlp_env.sh
+./setup_nlp_env.sh
 ```
+
+- Windows
+Executer ``setup_nlp_env.bat``
 
 ## Configuration
 
