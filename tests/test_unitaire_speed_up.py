@@ -42,7 +42,7 @@ def ensure_dir_exists(directory):
 
 def clean_directory(directory):
     """Nettoie un dossier et tous ses contenus."""
-    if os.path.exists(directory):
+    if os.path.exists(directory) and (" " in directory)==False: #verifier qui ya aucune espace dans le destination du fichier
         shutil.rmtree(directory)
 
 @pytest.fixture(autouse=True)
