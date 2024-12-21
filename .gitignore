@@ -116,6 +116,3 @@ config.yaml
 # Exclude data folders
 data/**/
 
-#Exclure mes scripts de test 
-test_file_handler.py
-test_audio_processing.py
