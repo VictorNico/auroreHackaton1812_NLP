@@ -1,5 +1,5 @@
 import os
-from audio_processing import changer_hauteur_audio
+from ..preprocessing.pitch import changer_hauteur_audio
 
 def traiter_fichiers_audio(dossier_principal, dossier_sortie, n_steps):
     """
