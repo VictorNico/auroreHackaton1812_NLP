@@ -30,9 +30,10 @@ build/
 **/*.wav
 # Datasets (large files)
 *.csv
-*.json
+**/*.json
 *.xlsx
-*.zip
+**/*.zip
+**/*.safetensors
 !sample_data.csv  # Exception for sample data
 
 # Logs
