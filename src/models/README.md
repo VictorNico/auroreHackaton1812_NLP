@@ -1,0 +1,1 @@
+Les Models de hugging Face que nous avons utilisé sont [ici ](https://drive.google.com/drive/folders/136CZaTNRYttkQg2Ii4kS3F44ww7le8En?usp=sharing)

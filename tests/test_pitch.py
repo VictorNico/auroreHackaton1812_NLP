@@ -1,6 +1,6 @@
 import os
 import unittest
-from audio_processing import changer_hauteur_audio
+from src.preprocessing.pitch import changer_hauteur_audio
 import soundfile as sf
 import librosa
 import pytest

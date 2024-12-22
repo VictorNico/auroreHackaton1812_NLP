@@ -30,9 +30,10 @@ build/
 **/*.wav
 # Datasets (large files)
 *.csv
-*.json
+**/*.json
 *.xlsx
-*.zip
+**/*.zip
+**/*.safetensors
 !sample_data.csv  # Exception for sample data
 
 # Logs
@@ -116,3 +117,5 @@ config.yaml
 # Exclude data folders
 data/**/
 
+src/models/wav2vec2-xls-r-1b/
+src/models/wav2vec2-xls-r-300m/
