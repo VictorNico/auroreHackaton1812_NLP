@@ -7,3 +7,6 @@ pip install sphinx
 pip install pytest pytest-cov
 pip install librosa soundfile pydub
 pip install pytest
+pip install datasets
+pip install torchaudio
+pip install jiwer

@@ -19,7 +19,7 @@ Reconnaissance Vocal de la langue Yemba
       <td>Chef d'équipe et maintaineur, Étudiant chercheur en Science des données, M2, UY1</td>
     </tr>
     <tr>
-      <td><img src="https://avatars.githubusercontent.com/u/50924368?v=4" alt="FOTSING ENGOULOU Simon Gaetan" width="50" height="50" style="border-radius: 50%;"></td>
+      <td><img src="https://avatars.githubusercontent.com/u/109069930?v=4" alt="FOTSING ENGOULOU Simon Gaetan" width="50" height="50" style="border-radius: 50%;"></td>
       <td><a href="https://github.com/FESG3002">FOTSING ENGOULOU Simon Gaetan</a></td>
       <td>Collaborateur, Étudiant chercheur en Science des données, M1, UY1</td>
     </tr>

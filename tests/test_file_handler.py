@@ -1,10 +1,9 @@
 import os
 import unittest
-from file_handler import traiter_fichiers_audio
-from audio_processing import changer_hauteur_audio
+from src.utils.file_handler import traiter_fichiers_audio
 import soundfile as sf
 import librosa
-import pytest
+
 
 class TestFileHandler(unittest.TestCase):
     def setUp(self):
