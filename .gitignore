@@ -117,3 +117,5 @@ config.yaml
 # Exclude data folders
 data/**/
 
+src/models/wav2vec2-xls-r-1b/
+src/models/wav2vec2-xls-r-300m/
