@@ -1,6 +1,7 @@
 import numpy as np
-import soundfile as sf
 import os
+import shutil
+import soundfile as sf
 
 def ajouter_bruit(audio, snr_db):
     """
@@ -76,24 +77,10 @@ def traiter_repertoire(input_dir, output_dir, niveau_bruit, sauvegarder=False):
             else:
                 print(f"Fichier traité : {filename}")
 
-def main():
-    # Répertoire des fichiers audio originaux
-    input_dir = r'C:\Users\Christian\Desktop\hackathon\Nouveau dossier'
-    
-    # Répertoire où sauvegarder les fichiers audio modifiés
-    output_dir = r'C:\Users\Christian\Desktop\hackathon\Nouveau dossier (2)'
-    
-    # Niveau de bruit (SNR en dB)
-    niveau_bruit = 10  # Spécifier le niveau de bruit souhaité
-
-    # Option de sauvegarde
-    sauvegarder = True  # Change to False if you don't want to save modified files
-
-    traiter_repertoire(input_dir, output_dir, niveau_bruit, sauvegarder)
-    if sauvegarder:
-        print(f"Tous les fichiers audio ont été traités et sauvegardés dans : {output_dir}")
-    else:
-        print("Tous les fichiers audio ont été traités mais non sauvegardés.")
-
-if __name__ == "__main__":
-    main()
+def verifier_bruit(original_audio, modifie_audio, seuil_diff): 
+    """ Vérifie si du bruit a été ajouté en comparant les signaux audio originaux et modifiés. 
+    :param original_audio: Signal audio original 
+    :param modifie_audio: Signal audio modifié 
+    :param seuil_diff: Seuil de différence pour considérer qu'il y a du bruit :return: True si du bruit a été ajouté, sinon False """ 
+    difference = np.mean(np.abs(original_audio - modifie_audio)) 
+    return difference > seuil_diff
