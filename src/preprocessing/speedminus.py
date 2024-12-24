@@ -27,7 +27,10 @@ __version__ = "1.0.0"
 __date__ = "2024-12-19"
 __license__ = "APACHE LICENSE"
 
-from ..utils.io import *
+import librosa
+import soundfile as sf
+from pydub import AudioSegment
+from pydub.utils import which
 
 # Fonctions pour ralentir l'audio
 
