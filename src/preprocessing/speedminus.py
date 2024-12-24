@@ -27,6 +27,8 @@ __version__ = "1.0.0"
 __date__ = "2024-12-19"
 __license__ = "APACHE LICENSE"
 
+import logging
+
 import librosa
 import soundfile as sf
 from pydub import AudioSegment

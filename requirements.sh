@@ -10,3 +10,5 @@ pip install pytest
 pip install datasets
 pip install torchaudio
 pip install jiwer
+pip install tf-keras
+pip install  'transformers[torch]'
