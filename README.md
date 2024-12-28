@@ -29,7 +29,7 @@ Reconnaissance Vocal de la langue Yemba
       <td>Collaborateur, Étudiant chercheur en Science des données, M1, UY1</td>
     </tr>
     <tr>
-      <td><img src="https://avatars.githubusercontent.com/u/50924368?v=4" alt="NOUBISSI FOPA Christian Junior" width="50" height="50" style="border-radius: 50%;"></td>
+      <td><img src="https://avatars.githubusercontent.com/u/167098974?v=4" alt="NOUBISSI FOPA Christian Junior" width="50" height="50" style="border-radius: 50%;"></td>
       <td><a href="https://github.com/NFChristianJ">NOUBISSI FOPA Christian Junior</a></td>
       <td>Collaborateur, Étudiant chercheur en Science des données, M1, UY1</td>
     </tr>
