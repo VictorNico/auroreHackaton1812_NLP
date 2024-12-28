@@ -1,5 +1,5 @@
 # Python Environment
-nlp_env/
+nlp_env*/
 venv/
 env/
 .env
